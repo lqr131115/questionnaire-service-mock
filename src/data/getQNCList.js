@@ -116,6 +116,7 @@ const choiceTestQNC = [
         { value: "C", label: "C", checked: Random.boolean() },
         { value: "D", label: "D", checked: Random.boolean() },
       ],
+      defaultValue: [],
     },
     hidden: false,
     locked: false,

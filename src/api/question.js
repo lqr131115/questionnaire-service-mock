@@ -22,7 +22,7 @@ module.exports = [
         id: Mock.mock("@guid"),
         title: Mock.mock("@ctitle(5, 10)"),
         description: Mock.mock("@cparagraph(1, 3)"),
-        styles: null,
+        css: null,
         scripts: null,
         isPublished: true,
         componentList: getQNCList(),
