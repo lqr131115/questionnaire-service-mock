@@ -3,14 +3,14 @@ const { SuccessRes } = require("../response/index");
 const Random = Mock.Random;
 module.exports = [
   {
-    url: "/mock/user/register",
+    url: "/user/register",
     method: "post",
     response() {
       return new SuccessRes(null, { msg: "注册成功" });
     },
   },
   {
-    url: "/mock/user/login",
+    url: "/user/login",
     method: "post",
     response(ctx) {
       return new SuccessRes({
@@ -25,7 +25,7 @@ module.exports = [
     },
   },
   {
-    url: "/mock/user",
+    url: "/user",
     method: "get",
     response() {
       return new SuccessRes({

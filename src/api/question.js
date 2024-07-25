@@ -6,7 +6,7 @@ const getQNList = require("../data/getQNList");
 
 module.exports = [
   {
-    url: "/mock/question",
+    url: "/question",
     method: "post",
     response() {
       return new SuccessRes({
@@ -15,7 +15,7 @@ module.exports = [
     },
   },
   {
-    url: "/mock/question/:id",
+    url: "/question/:id",
     method: "get",
     response() {
       return new SuccessRes({
@@ -30,7 +30,7 @@ module.exports = [
     },
   },
   {
-    url: "/mock/question",
+    url: "/question",
     method: "get",
     response(ctx) {
       const { url = "", query = {} } = ctx;
@@ -43,7 +43,7 @@ module.exports = [
     },
   },
   {
-    url: "/mock/question/:id",
+    url: "/question/:id",
     method: "patch",
     response() {
       return new SuccessRes({
@@ -59,7 +59,7 @@ module.exports = [
   },
   // 单个删除
   {
-    url: "/mock/question/:id",
+    url: "/question/:id",
     method: "delete",
     response() {
       return new SuccessRes(null, { msg: "删除成功" });
@@ -67,7 +67,7 @@ module.exports = [
   },
   // 批量删除
   {
-    url: "/mock/question",
+    url: "/question",
     method: "delete",
     response() {
       return new SuccessRes(null, { msg: "删除成功" });
@@ -75,7 +75,7 @@ module.exports = [
   },
   // 单个复制
   {
-    url: "/mock/question/copy/:id",
+    url: "/question/copy/:id",
     method: "post",
     response() {
       return new SuccessRes({

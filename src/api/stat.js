@@ -4,7 +4,7 @@ const getStatList = require("../data/getStatList");
 const Random = Mock.Random;
 module.exports = [
   {
-    url: "/mock/stat/:id",
+    url: "/stat/:id",
     method: "get",
     response(ctx) {
       // page 暂时用不到
@@ -17,7 +17,7 @@ module.exports = [
     },
   },
   {
-    url: "/mock/stat/:id/:componentId",
+    url: "/stat/:id/:componentId",
     method: "get",
     response(ctx) {
       return new SuccessRes({
